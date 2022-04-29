@@ -1,0 +1,18 @@
+#include <stdio.h>
+float fahrenheit(float temp);
+
+int main()
+{
+    float temp;
+    printf("Enter the temperature in celsius \n");
+    scanf("%f", &temp);
+    printf("The value of temperature in fahrenheit is %0.3f F\n", fahrenheit(temp));
+    return 0;
+}
+
+float fahrenheit(float temp)
+{
+    float ctof;
+    ctof = ((temp * (9 / 5)) + 32);
+    return ctof;
+}
